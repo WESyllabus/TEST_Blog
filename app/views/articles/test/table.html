@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+		<link rel="stylesheet" type="text/css" href="css/table.css" />
+		<title></title>
+	</head>
+	<body onload="initial()">
+		<script type="text/javascript" src="java_script/table.js"></script>
+		<table class="table table-striped">
+			<caption id="a"><h2>BookList<h2></caption>
+			<tr>
+				<th>Bookname</th><th>Author</th><th>Price</th><th>Date of Purchase</th><th>Type</th>
+			</tr>
+			<tbody id="tbody" style="display:none">
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td>
+					<input type="button" class="btn btn-danger" value="Delete" onClick="removeRow(this)" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="padding: 100px 100px 10px;">
+		    <form name="form1" class="bs-example bs-example-form" role="form">
+		        <div class="input-group">
+		        	<span class="input-group-addon">B</span>
+		            <input type="text" class="form-control" name="bookname" placeholder="Bookname">
+		        </div>
+		        <br>
+		        <div class="input-group">
+		        	<span class="input-group-addon">A</span>
+		            <input type="text" class="form-control" name="author" placeholder="Author">
+		        </div>
+		        <br>
+		        <div class="input-group">
+		            <span class="input-group-addon">$</span>
+		            <input type="text" class="form-control" name="price">
+		        </div>
+		        <dir>
+		        	<select id="year" onChange="setMonth()">
+					</select> year
+					<select id="month" onChange="setDay()">
+					</select> month
+					<select id="day">
+					</select> day <br>
+					<select id="type">
+		        	</select> type <br>
+					<dir>
+		        	<input type="button" class="btn btn-info btn-lg" value="Add Book" onclick="onClickAddBook()" ><br>
+		        	</dir>
+		        </dir>
+		    </form>
+		</div>
+	</body>
+</html>

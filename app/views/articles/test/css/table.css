@@ -1,0 +1,35 @@
+
+body {
+  background: #eee !important;
+}
+a{
+	font-size:20px;
+	font-style:italic;
+}
+table{
+	max-width: 500px;
+	background: #FFFFFF;
+	border-collapse:separate;
+	border-spacing:5px;
+	margin:0 auto;
+}
+div{
+	max-width: 500px;
+	margin: 0 auto;
+}
+form{
+	margin: 0 auto;
+}
+myth{
+	border:1px solid black;
+	padding:15px;
+	text-align:center;
+	font-size:15px;
+}
+mytd{
+	border:1px solid black;
+	padding:15px;
+	background-color:#F9E3AF;
+	text-align:center;
+	font-size:15px;
+}
